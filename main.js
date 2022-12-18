@@ -18,7 +18,7 @@ const loginToWallet = () => {
     window.ethereum.sendAsync({method: 'eth_requestAccounts'}, function(error, result) {
       const address = result.result[0];
       const shortenedAddress = address.substring(0, 5) + '...' + address.substring(address.length - 4);
-      btnConnect.innerHTML = shortenedAddress;
+      btnConnect.innerText = shortenedAddress;
       loggedIn = true;
     });
   } else {
@@ -29,7 +29,7 @@ const loginToWallet = () => {
 const logoutFromWallet = () => {
   window.ethereum.sendAsync({method: 'eth_requestAccounts', params: []}, function(error, result) {
     loggedIn = false;
-    btnConnect.innerHTML = 'Login with Metamask';
+    btnConnect.innerText = 'Login with Metamask';
   });
 }
 
