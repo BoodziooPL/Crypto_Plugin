@@ -6,5 +6,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
+.container{
+    background-color: var(--background);
+    width: 100%;
+    min-height: 100vh;
+    color: var(--text);
+}
+
+header{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.logo, .btn-connect{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    font-family: Ailerons;
+    font-size: 2rem;  
+}
+
+.btn-connect{
+    width: 20%;
+    height: 4rem;
+   
+}
+.btn-connect button{
+    background-color: var(--button);
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: var(--text);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.wrapper{
+    width: 80%;
+    height: 5rem;
+    background-color: var(--green);
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 5px;
+  text-align: center;
+}
+
+.value{
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info, .pulpit-info{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row1, .coins{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.btn-expand {
+    cursor: pointer;
+  }
+  
+  .btn-expand:after {
+    content: "down";
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  .expanded {
+    display: block;
+  }
+  
+  .expanded:after {
+    content: "up";
+  }
+  

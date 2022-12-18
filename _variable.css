@@ -3,5 +3,11 @@
     --input:#145DA0;
     --button:#2E8BC0;
     --text:#B1D4E0;
+    --green:#355E3B;
 
+}
+
+@font-face {
+    font-family: Ailerons;
+    src: url(Ailerons-Typeface.otf);
 }
