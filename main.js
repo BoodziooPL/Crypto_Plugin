@@ -1,15 +1,12 @@
 const btnExpand = document.querySelector('.btn-expand');
 const content = document.querySelector('.content');
 
-btnExpand.addEventListener('click', () => {
-  if (content.style.display === 'none') {
-    content.style.display = 'block';
-    btnExpand.innerText = 'Zwiń poddiv';
-  } else {
-    content.style.display = 'none';
-    btnExpand.innerText = 'Rozwiń poddiv';
-  }
-});
+const visible = () => {
+    content.classList.toggle('info')
+    content.classList.toggle('content')
+}
+
+btnExpand.addEventListener('click', visible)
 
 const btnConnect = document.querySelector('.btnConnect');
 btnConnect.innerText = 'Login with Metamask';
