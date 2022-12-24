@@ -64,13 +64,14 @@ header{
 
 .wrapper{
     width: 80%;
-    height: 5rem;
+    min-height: 15rem;
     background-color: var(--green);
     display: flex;
     gap: 2rem;
     flex-direction: column;
     border-radius: 5px;
   text-align: center;
+
 }
 
 .value{
@@ -125,4 +126,21 @@ main{
     display: none;
   }
   
+.miniIMG{
+    width: 2rem;
+    height: 2rem;
+}
 
+.topThree{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.priceDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

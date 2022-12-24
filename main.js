@@ -20,6 +20,7 @@ const loginToWallet = () => {
       const shortenedAddress = address.substring(0, 5) + '...' + address.substring(address.length - 4);
       btnConnect.innerText = shortenedAddress;
       loggedIn = true;
+    
     });
   } else {
     logoutFromWallet();
@@ -48,3 +49,6 @@ function handleFormSubmit(event) {
 
 
   btnConnect.addEventListener('click', loginToWallet)
+
+
+  
