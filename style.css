@@ -11,7 +11,8 @@
 .container{
     background-color: var(--background);
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    padding-top: 3rem;
     color: var(--text);
 }
 
@@ -64,7 +65,7 @@ header{
 
 .wrapper{
     width: 80%;
-    min-height: 15rem;
+    
     background-color: var(--green);
     display: flex;
     gap: 2rem;
